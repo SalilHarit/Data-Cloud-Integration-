@@ -1,5 +1,6 @@
 # Data-Cloud-Integration-
-This repository documents my first internship project at G S Solar Systems (Noida)
+
+This repository documents my first internship project at G S Solar Systems (Noida) which involved displaying live generation graphs using data from data logger on raspberry pi remotely and big part of this project involves cloud infrastructure management and configuration such as using and configuring aws cloud api creation configuration making mapping templates for request payload transformation and lambda function creation and configuration and enabling lambda function to use external libraries for use as well as MongoDB collection for data storage and potential direct data viz.
 
 # API Documentation for Data Logger Integration
 Overview
