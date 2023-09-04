@@ -55,11 +55,11 @@ Response Body
 
 Describe how clients should authenticate themselves to access the API, including any required headers or tokens. Explain the roles and permissions needed for accessing specific endpoints.
 
-API Flow
+# API Flow
 
 First point is data logger the source of the data which sends the data to the URL registered in the data logger which is the API then the API recieves data from data logger in url encoded form format and applies data transformation into json from form encoded url using a mapping template which is written in Velocity Template Language and then the data sent to lambda function and which extracts the data field from event that contains the required csv data and sends it to MongoDB collection named Solar 
 
-Lambda Function
+# Lambda Function
 
 ```
 import pymongo
@@ -104,12 +104,14 @@ Processing Logic: the .
 MongoDB Integration
 Explain how the Lambda function connects to MongoDB for data storage.
 
-MongoDB Connection: The lambda function has been provided access to mongodb library by uploading a compressed zip folder containing necessary libraries and mongodb connection string and client code structure is used to establish connection to mongodb and once data is successfully inserted or if data is unable to be inserted then connection is closed and lambda function execution ends.
+# MongoDB Connection 
 
-Error Handling
-Explain how errors and exceptions are handled in your API. Describe error codes, messages, and recommended actions for clients.
+The lambda function has been provided access to mongodb library by uploading a compressed zip folder containing necessary libraries and mongodb connection string and client code structure is used to establish connection to mongodb and once data is successfully inserted or if data is unable to be inserted then connection is closed and lambda function execution ends and in future mongodb's url connection is going to be used to for accessing real-time data monitoring application for solar plants using raspberry pi ![Screenshot (111)](https://github.com/SalilHarit/Data-Cloud-Integration-/assets/39475669/cdf4c1c9-ab19-4140-93e0-3e2fe64b6358)
+.
 
-Security Considerations
+# Security Considerations
+
+undisclosed API endpoint
 
 input validation temporarily removed.
 
